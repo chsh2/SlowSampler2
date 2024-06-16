@@ -1,0 +1,12 @@
+#N canvas 827 239 527 327 12;
+#X obj 99 99 ../modules/utils/l2s;
+#X obj 7 10 inlet message;
+#X msg 99 131 \; gui_hint label \$1, f 38;
+#X obj 7 124 s camomile;
+#X msg 7 99 gui redraw;
+#X obj 7 40 t b a;
+#X connect 0 0 2 0;
+#X connect 1 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 5 1 0 0;

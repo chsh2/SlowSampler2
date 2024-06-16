@@ -1,0 +1,13 @@
+SlowSampler2 is a 
+
+---
+
+The library is built with a modified version of Camomile and several external objects:
+
+* libpd 0.52.0-test1
+* Camomile v1.0.8-beta10
+* pd-else v1.0-beta44
+* cyclone v0.6.0
+
+Please refer to the following repository for more information:
+https://github.com/chsh2/Camomile

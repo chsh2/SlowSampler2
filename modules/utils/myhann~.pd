@@ -1,0 +1,16 @@
+#N canvas 827 239 527 327 12;
+#X obj 125 42 inlet~ phase;
+#X obj 125 236 *~;
+#X obj 125 359 outlet~;
+#X obj 125 164 cos~;
+#X obj 125 114 *~ 0.5;
+#X obj 125 311 -~;
+#X obj 55 236 sig~ 1;
+#X text 19 399 This module aims at implementing the same function as [else/envelope~ hann] using only native Pd blocks., f 50;
+#X connect 0 0 4 0;
+#X connect 1 0 5 1;
+#X connect 3 0 1 0;
+#X connect 3 0 1 1;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;
+#X connect 6 0 5 0;

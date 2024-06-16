@@ -1,0 +1,78 @@
+param -name Volume -label dB -min -50 -max 6 -default -3;
+param -name Pan -label % -min -100 -max 100 -default 0;
+
+param -name EnvelopeAttack -label ms -min 0 -max 3000 -default 50;
+param -name EnvelopeDecay -label ms -min 0 -max 8000 -default 1000;
+param -name EnvelopeSustain -label % -min 0 -max 100 -default 100;
+param -name EnvelopeRelease -label ms -min 0 -max 3000 -default 100;
+param -name Portamento -label ms -min 0 -max 3000 -default 0;
+param -name Legato -min 0 -max 1 -default 0 -nsteps 2;
+param -name EnableCC -min 0 -max 1 -default 0 -nsteps 2;
+
+param -name MainAudioSource -list Sawtooth/WavFile/MainChain/SideChain -default 1;
+param -name MainFileBasePitch -label note -min 36 -max 84 -default 60;
+param -name MainFileStartPosition -label % -min 0 -max 100 -default 0;
+param -name MainFileEndPosition -label % -min 0 -max 100 -default 100;
+param -name MainFileTimeStretch -label % -min 25 -max 400 -default 100;
+param -name MainFileSpeedCurve -label % -min 25 -max 400 -default 100;
+param -name MainFileLoop -min 0 -max 1 -default 0 -nsteps 2;
+param -name FileStretchMode -list Constant/Classic/Adaptive;
+param -name AdaptiveDelay -label beat -min 1 -max 8 -default 4 -nsteps 8;
+
+param -name GranularSynthEnabled -min 0 -max 1 -default 1 -nsteps 2;
+param -name GranularSynthLevel -label % -min 0 -max 100 -default 100;
+param -name GranularGrainSize -label ms -min 0 -max 200 -default 75;
+param -name GranularDenoise -label % -min 0 -max 100 -default 0;
+param -name GranularPhaseBashEnabled -min 0 -max 1 -default 0 -nsteps 2;
+param -name GranularFormantShift -label semitone -min -12 -max 12 -default 0;
+param -name GranularFormantPreservation -label % -min 0 -max 100 -default 0;
+
+param -name WavetableSynthEnabled -min 0 -max 1 -default 0 -nsteps 2;
+param -name WavetableSynthLevel -label % -min 0 -max 100 -default 100;
+param -name WavetableGrainSize -label ms -min 0 -max 200 -default 75;
+param -name WavetableFormantShift -label semitone -min -12 -max 12 -default 0;
+param -name WavetableFormantPreservation -label % -min 0 -max 100 -default 100;
+
+param -name UntunedAudioEnabled -min 0 -max 1 -default 0 -nsteps 2;
+param -name UntunedAudioSynthLevel -label % -min 0 -max 100 -default 100;
+
+param -name SubAudioSource -list WavFile/MainChain/SideChain;
+param -name SubFileStartPosition -label % -min 0 -max 100 -default 0;
+param -name SubFileEndPosition -label % -min 0 -max 100 -default 100;
+param -name SubFileTimeStretch -label % -min 25 -max 400 -default 100;
+param -name SubFileSpeedCurve -label % -min 25 -max 400 -default 100;
+param -name SubFileLoop -min 0 -max 1 -default 0 -nsteps 2;
+param -name SubFileAutoStretch -min 0 -max 1 -default 0 -nsteps 2;
+
+param -name ModVolumeEnabled -min 0 -max 1 -default 0 -nsteps 2;
+param -name ModVolumeFactor -label % -min -100 -max 100 -default 100;
+param -name ModPitchEnabled -min 0 -max 1 -default 0 -nsteps 2;
+param -name ModPitchFactor -label % -min 0 -max 100 -default 100;
+param -name ModToneEnabled -min 0 -max 1 -default 0 -nsteps 2;
+param -name ModToneVocoderChannels -list 20/40/80;
+
+param -name FilterEnabled -min 0 -max 1 -default 0 -nsteps 2;
+param -name CombFilterFactor -label % -min 0 -max 100 -default 50;
+param -name CombFilterMix -label % -min 0 -max 100 -default 100;
+param -name CombFilterOctaveDoubler -min 0 -max 1 -default 0 -nsteps 2;
+param -name LowPassFilterFactor -min 0 -max 20 -default 20;
+param -name LowPassFilterMix -label % -min 0 -max 100 -default 100;
+param -name LowPassPluck -label ms -min 0 -max 3000 -default 0;
+
+param -name DisplayLanguage -list English/Chinese;
+
+default_foreground_color 008DDA;
+default_background_color FFFFFF;
+transparent_color FFFFFF;
+image background.png;
+description Infos.txt;
+
+iolayout 0 2;
+midiin true;
+midionly false;
+playhead true;
+
+type instrument;
+code TDN1;
+compatibility 1.0.7;
+manufacturer chsh2;
