@@ -1,4 +1,4 @@
-SlowSampler2 is a 
+SlowSampler2 is a VST3 plugin to play audio samples, focusing on providing rich options of time stretching and pitch tuning, in order to convert different types of sounds into musical instruments.
 
 ---
 

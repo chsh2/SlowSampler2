@@ -1,6 +1,6 @@
-# Slow Sampler 2: A Plug-in for Audio Stretching & Tuning
+# SlowSampler2: A Plug-in for Audio Stretching & Tuning
 
-Slow Sampler 2 is a 
+SlowSampler2 is a VST3 plugin to play audio samples, focusing on providing rich options of time stretching and pitch tuning, in order to convert different types of sounds into musical instruments.
 
 The plug-in is originally developed for creating OtoMAD (音MAD) and YTPMV audio. Nevertheless, the application is not limited to these genres.
 
@@ -18,18 +18,28 @@ The plug-in is originally developed for creating OtoMAD (音MAD) and YTPMV audio
 
 ## Installation
 
+Please download the archive from the [Releases] page. Decompress the files into the system default folder of holding VST3 plugins.
+
+Please refer to the following page for the default VST3 location in different operation systems:
+
 https://steinbergmedia.github.io/vst3_dev_portal/pages/Technical+Documentation/Locations+Format/Plugin+Locations.html
 
 ## Usage
 
-### Using Slow Sampler as a VST3 plug-in
+This section introduces the basic usage of this plugin. The complete user manual is still under preparation.
 
+### Using SlowSampler as a VST3 plug-in
 
-### Using Slow Sampler as a Pure Data patch
+In the plugin host software, e.g. a digital audio workstation (DAW), two VST3 plugins will be detected:
 
-[PlugData](https://plugdata.org/) is an environment for running/editing Pure Data programs. It can be used either as a standalone app, an instrument plugin or an effect plugin. By loading the file `plugdata.pd`, you can run Slow Sampler 2 inside PlugData in any of these modes. This way also allows the user to make some changes to the functionality of this plug-in without recompiling it.
+- **SlowSampler2**: This is an instrument (VST3i). Please use the button in the graphic interface to load a WAV file as a sample, and then make sounds with the MIDI input.
+- **SlowSampler2FX**: This is an effect plugin. With the same features of the instrument mode, it also has the capacity to use an audio track (either the current track or a side chain) as the sampling source. Please note that the effect mode still requires the MIDI input to make any sound.
 
-It is less recommended to run Slow Sampler 2 with the vanilla [Pure Data](https://puredata.info/), because the patch is not compatible with the latest Pure Data release. Moreover, it contains several external objects which need to be manually installed in Pure Data. If you insist on doing this, please refer to https://github.com/chsh2/Camomile for the required dependencies.
+### Using SlowSampler as a Pure Data patch
+
+[PlugData](https://plugdata.org/) is an environment for running/editing Pure Data programs. It can be used either as a standalone app, an instrument plugin or an effect plugin. By loading the file `plugdata.pd`, you can run SlowSampler2 inside PlugData in any of these modes. This way also allows the user to make some changes to the functionality of this plug-in without recompiling it.
+
+It is less recommended to run SlowSampler2 with the vanilla [Pure Data](https://puredata.info/), because the patch is not compatible with the latest Pure Data release. Moreover, it contains several external objects which need to be manually installed in Pure Data. If you insist on doing this, please refer to https://github.com/chsh2/Camomile for the required dependencies.
 
 ## Compilation
 

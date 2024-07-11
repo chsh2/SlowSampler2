@@ -1,6 +1,6 @@
-# Slow Sampler 2
+# SlowSampler2
 
-Slow Sampler是一个音频采样器VST3插件，旨在提供灵活的时间拉伸和变调选项，以处理不局限于常规乐器的音频样本。开发此插件的主要目标是音MAD和YTPMV类音频的制作，但插件也可用于音色设计或其它类型的音频创作。
+SlowSampler是一个音频采样器VST3插件，旨在提供灵活的时间拉伸和变调选项，以处理不局限于常规乐器的音频样本。开发此插件的主要目标是音MAD和YTPMV类音频的制作，但插件也可用于音色设计或其它类型的音频创作。
 
 本插件基于Pure Data图形语言，用户与开发者不需要重新编译插件，即可利用可视化的编辑器对插件的功能进行修改与定制。
 
@@ -49,7 +49,7 @@ https://steinbergmedia.github.io/vst3_dev_portal/pages/Technical+Documentation/L
 - 使用编译出的`.vst3`文件（在Linux下为`.so`文件）替换本插件中的对应文件。
   - 请参照Camomile的[Wiki页面](https://github.com/pierreguillot/Camomile/wiki/How-to-create-new-plugins)以了解将PureData程序与Camomile关联的细节。
 
-使用此方法也可编译VST3以外的插件格式，如AU或LV2，但这些格式下Slow Sampler的功能尚未经过测试。
+使用此方法也可编译VST3以外的插件格式，如AU或LV2，但这些格式下SlowSampler的功能尚未经过测试。
 
 ## 参考与致谢
 
