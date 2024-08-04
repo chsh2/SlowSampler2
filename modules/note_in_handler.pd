@@ -1,7 +1,7 @@
 #N canvas 827 239 527 327 12;
 #X obj 62 154 notein;
 #X obj 62 383 pack f f f;
-#X obj 59 1189 dac~;
+#X obj 68 1201 dac~;
 #X obj 205 830 r global_volume;
 #X obj 205 863 + 100;
 #X obj 205 892 dbtorms;
@@ -9,11 +9,11 @@
 #X obj 62 457 route 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16, f 46;
 #X text 57 27 Route the input MIDI signal to support polyphony.;
 #X msg 12 154 stop;
-#X obj 206 942 r global_pan;
-#X obj 206 1030 * -1;
-#X obj 206 1057 + 1;
-#X obj 31 1097 *~;
-#X obj 111 1097 *~;
+#X obj 212 955 r global_pan;
+#X obj 212 1043 * -1;
+#X obj 212 1070 + 1;
+#X obj 37 1110 *~;
+#X obj 117 1110 *~;
 #X obj 132 125 r emulated_note_in;
 #X obj 132 154 unpack f f;
 #X obj 62 423 spigot;
@@ -48,8 +48,8 @@
 #X obj 620 498 moses 0.5;
 #X obj 540 528 t f f f;
 #X obj 825 622 s last_pitch;
-#X obj 206 971 / 200;
-#X obj 206 1000 + 0.5;
+#X obj 212 984 / 200;
+#X obj 212 1013 + 0.5;
 #X text 57 53 [clone] is not used here \, which makes it easier to debug the subpatches in PlugData.;
 #X obj 540 664 voice_processor~;
 #X obj 62 504 voice_processor~;
@@ -69,8 +69,8 @@
 #X obj 304 650 voice_processor~;
 #X obj 322 678 voice_processor~;
 #X obj 341 704 voice_processor~;
-#X obj 31 1139 hip~ 1;
-#X obj 111 1139 hip~ 1;
+#X obj 37 1152 hip~ 1;
+#X obj 117 1152 hip~ 1;
 #X connect 0 0 54 0;
 #X connect 0 1 54 1;
 #X connect 1 0 17 0;
