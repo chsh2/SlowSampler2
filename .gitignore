@@ -2,3 +2,4 @@
 /ui_design/
 *.vst3
 *.so
+.DS_Store
