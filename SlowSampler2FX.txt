@@ -31,7 +31,7 @@ param -name WavetableSynthEnabled -min 0 -max 1 -default 0 -nsteps 2;
 param -name WavetableSynthLevel -label % -min 0 -max 100 -default 100;
 param -name WavetableGrainSize -label ms -min 0 -max 200 -default 75;
 param -name WavetableFormantShift -label semitone -min -12 -max 12 -default 0;
-param -name WavetableFormantPreservation -label % -min 0 -max 100 -default 100;
+param -name WavetableFormantPreservation -label % -min 0 -max 100 -default 0;
 
 param -name UntunedAudioEnabled -min 0 -max 1 -default 0 -nsteps 2;
 param -name UntunedAudioSynthLevel -label % -min 0 -max 100 -default 100;
@@ -47,7 +47,7 @@ param -name SubFileAutoStretch -min 0 -max 1 -default 0 -nsteps 2;
 param -name ModVolumeEnabled -min 0 -max 1 -default 0 -nsteps 2;
 param -name ModVolumeFactor -label % -min -100 -max 100 -default 100;
 param -name ModPitchEnabled -min 0 -max 1 -default 0 -nsteps 2;
-param -name ModPitchFactor -label % -min 0 -max 100 -default 100;
+param -name ModPitchFactor -label % -min -100 -max 100 -default 100;
 param -name ModToneEnabled -min 0 -max 1 -default 0 -nsteps 2;
 param -name ModToneVocoderChannels -list 20/40/80;
 

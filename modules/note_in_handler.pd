@@ -1,7 +1,7 @@
 #N canvas 827 239 527 327 12;
 #X obj 62 154 notein;
 #X obj 62 383 pack f f f;
-#X obj 68 1201 dac~;
+#X obj 68 1257 dac~;
 #X obj 205 830 r global_volume;
 #X obj 205 863 + 100;
 #X obj 205 892 dbtorms;
@@ -69,8 +69,8 @@
 #X obj 304 650 voice_processor~;
 #X obj 322 678 voice_processor~;
 #X obj 341 704 voice_processor~;
-#X obj 37 1152 hip~ 1;
-#X obj 117 1152 hip~ 1;
+#X obj 117 1208 hip~ 1;
+#X obj 37 1208 hip~ 1;
 #X connect 0 0 54 0;
 #X connect 0 1 54 1;
 #X connect 1 0 17 0;
@@ -99,8 +99,8 @@
 #X connect 10 0 49 0;
 #X connect 11 0 12 0;
 #X connect 12 0 13 1;
-#X connect 13 0 70 0;
-#X connect 14 0 71 0;
+#X connect 13 0 71 0;
+#X connect 14 0 70 0;
 #X connect 15 0 16 0;
 #X connect 16 0 54 0;
 #X connect 16 1 54 1;
@@ -163,5 +163,5 @@
 #X connect 67 0 6 0;
 #X connect 68 0 6 0;
 #X connect 69 0 6 0;
-#X connect 70 0 2 0;
-#X connect 71 0 2 1;
+#X connect 70 0 2 1;
+#X connect 71 0 2 0;

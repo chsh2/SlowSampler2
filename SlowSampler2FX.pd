@@ -174,8 +174,8 @@
 #X obj 733 252 hsl 80 16 -100 100 0 0 sld-mod_volume_factor sld-mod_volume_factor-r empty -2 -8 0 10 #ffffff #eeac76 #373737 0 0;
 #X obj 712 272 cnv 15 50 16 empty label_replace Replace 0 9 0 12 #ffffff #637a9f 0;
 #X obj 792 272 cnv 15 50 16 empty label_multiply Multiply 0 9 0 12 #ffffff #637a9f 0;
-#X floatatom 820 292 6 0 100 0 - mod_pitch_factor-r mod_pitch_factor 10;
-#X obj 733 292 hsl 80 16 0 100 0 0 sld-mod_pitch_factor sld-mod_pitch_factor-r empty -2 -8 0 10 #ffffff #eeac76 #373737 0 0;
+#X floatatom 820 292 6 -100 100 0 - mod_pitch_factor-r mod_pitch_factor 10;
+#X obj 733 292 hsl 80 16 -100 100 0 0 sld-mod_pitch_factor sld-mod_pitch_factor-r empty -2 -8 0 10 #ffffff #eeac76 #373737 0 0;
 #X obj 865 292 cnv 15 20 16 empty empty % 0 9 0 12 #ffffff #637a9f 0;
 #X obj 632 362 cnv 15 50 16 empty label_comb Comb 0 9 0 12 #ffffff #637a9f 0;
 #X obj 632 422 cnv 15 50 16 empty label_lowpass Lowpass 0 9 0 12 #ffffff #637a9f 0;
