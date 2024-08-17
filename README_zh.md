@@ -1,5 +1,7 @@
 # SlowSampler2
 
+[[English](README.md)]
+
 SlowSampler是一个音频采样器VST3插件，旨在提供灵活的时间拉伸和变调选项，以处理不局限于常规乐器的音频样本。开发此插件的主要目标是音MAD和YTPMV类音频的制作，但插件也可用于音色设计或其它类型的音频创作。
 
 本插件基于Pure Data图形语言，用户与开发者不需要重新编译插件，即可利用可视化的编辑器对插件的功能进行修改与定制。
@@ -26,20 +28,24 @@ https://steinbergmedia.github.io/vst3_dev_portal/pages/Technical+Documentation/L
 
 ## 使用方法
 
-此处提供插件的基本使用方法。对插件每个具体功能的详细介绍文档正在准备中。
+*此处提供插件的基本使用方法。对插件每个具体功能的详细介绍文档正在准备中。*
 
-### 使用VST3插件
+<details>
+  <summary>使用VST3插件</summary>
 
 若安装成功，在DAW/宿主软件中可以看到两个新的VST3插件：
 
 - **SlowSampler2**：此插件将被DAW识别为乐器。点击界面中的按钮读取一个WAV波形文件，即可将其作为音色进行演奏。
 - **SlowSampler2FX**：此插件将被DAW识别为效果器。它包含乐器模式下的所有功能，此外可以选择主链或侧链的音频轨道作为采样源。请注意，插件仍然仅在收到MIDI输入时才会发声，在部分DAW中，需要手动设置来让效果器插件接收MIDI信号。
+</details>
 
-### 使用PlugData编辑器
+<details>
+  <summary>使用PlugData编辑器</summary>
 
 [PlugData](https://plugdata.org/)是一个用来运行与编辑Pure Data程序的图形化环境，既可作为独立程序，又可作为音频插件使用。在PlugData中打开本插件提供的`plugdata.pd`文件，即可在PlugData内部使用本插件的功能。使用这种方法可以方便地对插件的功能进行调试与修改。
 
 请注意，并不推荐使用原始的[Pure Data](https://puredata.info/)编辑器来运行本项目，因为本项目修改了部分代码、且引入了外部库。相关信息请查看以下关于编译的说明和[另一个GitHub仓库](https://github.com/chsh2/Camomile)（Camomile的分支）。
+</details>
 
 ## 编译方法
 
