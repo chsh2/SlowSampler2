@@ -6,6 +6,8 @@ SlowSampler是一个音频采样器VST3插件，旨在提供灵活的时间拉�
 
 本插件基于Pure Data图形语言，用户与开发者不需要重新编译插件，即可利用可视化的编辑器对插件的功能进行修改与定制。
 
+![](docs/gui_preview.png)
+
 ## 功能简介
 
 - 最多16复音的采样发声，既可作为乐器采样WAV波形文件，也可作为效果器处理DAW/宿主软件中的音频轨道
@@ -21,7 +23,7 @@ SlowSampler是一个音频采样器VST3插件，旨在提供灵活的时间拉�
 
 ## 安装方法
 
-请在本仓库的[Releases]()页面下载压缩包，解压并复制`SlowSampler2`文件夹到系统默认的VST3插件目录。
+请在本仓库的[Releases](https://github.com/chsh2/SlowSampler2/releases)页面下载压缩包，解压并复制`.vst3`文件夹到系统默认的VST3插件目录。
 
 不同操作系统中的VST3默认目录可在以下页面查询：
 https://steinbergmedia.github.io/vst3_dev_portal/pages/Technical+Documentation/Locations+Format/Plugin+Locations.html

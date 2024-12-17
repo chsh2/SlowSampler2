@@ -6,6 +6,8 @@ SlowSampler2 is a VST3 plugin to play audio samples, focusing on providing rich 
 
 The plug-in is originally developed for creating OtoMAD (音MAD) and YTPMV audio. Nevertheless, the application is not limited to these genres.
 
+![](docs/gui_preview.png)
+
 ## Features
 - Generate 16-voice polyphony sound by sampling either an audio file or an audio track in real time
 - Tune the sample with several algorithms to choose from
@@ -20,7 +22,7 @@ The plug-in is originally developed for creating OtoMAD (音MAD) and YTPMV audio
 
 ## Installation
 
-Please download the archive from the [Releases] page. Decompress the files into the system default folder of holding VST3 plugins.
+Please download the archive from the [Releases](https://github.com/chsh2/SlowSampler2/releases) page. Decompress the `.vst3` folder into the system default folder of holding VST3 plugins.
 
 Please refer to the following page for the default VST3 location in different operation systems:
 https://steinbergmedia.github.io/vst3_dev_portal/pages/Technical+Documentation/Locations+Format/Plugin+Locations.html

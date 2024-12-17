@@ -1,5 +1,7 @@
 /backup/
+/releases/
 /ui_design/
 *.vst3
 *.so
+*.dll
 .DS_Store
