@@ -1,6 +1,6 @@
 # SlowSampler2
 
-[[English](README.md)]
+<[🎥 视频演示](https://www.bilibili.com/video/BV1SNCBYKEMf/)> | <[English](README.md)>
 
 SlowSampler是一个音频采样器VST3插件，旨在提供灵活的时间拉伸和变调选项，以处理不局限于常规乐器的音频样本。开发此插件的主要目标是音MAD和YTPMV类音频的制作，但插件也可用于音色设计或其它类型的音频创作。
 

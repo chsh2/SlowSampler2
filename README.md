@@ -1,6 +1,6 @@
 # SlowSampler2: A Plug-in for Audio Stretching & Tuning
 
-[[中文](README_zh.md)]
+< [🎥 Video Demo](https://youtu.be/kiuc5jg3GvM) > | <[中文](README_zh.md)>
 
 SlowSampler2 is a VST3 plugin to play audio samples, focusing on providing rich options of time stretching and pitch tuning, in order to convert different types of sounds into musical instruments.
 
