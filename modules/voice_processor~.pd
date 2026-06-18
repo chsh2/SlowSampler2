@@ -327,8 +327,8 @@
 #X obj 440 3139 moses 0.5;
 #X obj 306 3197 s \$0-clear_buffer;
 #X obj 622 2503 r \$0-adjusted_onset;
-#X msg 797 2657 clear;
-#X obj 797 2626 r \$0-clear_buffer;
+#X msg 890 2657 clear;
+#X obj 890 2626 r \$0-clear_buffer;
 #X obj 477 2948 / 100;
 #X obj 239 715 / 100;
 #X obj 1876 1408 / 100;
@@ -553,6 +553,8 @@
 #X obj -658 1187 clip~ 0 1;
 #X obj -658 1222 /~;
 #X obj -811 1149 min 0.95;
+#X obj 797 2626 r lop_to_hip;
+#X obj 797 2657 / 100;
 #X connect 1 0 318 2;
 #X connect 2 0 318 3;
 #X connect 3 0 330 0;
@@ -875,7 +877,7 @@
 #X connect 291 0 404 1;
 #X connect 292 0 290 0;
 #X connect 293 0 292 2;
-#X connect 293 0 414 6;
+#X connect 293 0 414 7;
 #X connect 294 0 337 0;
 #X connect 295 0 338 0;
 #X connect 296 0 339 0;
@@ -916,7 +918,7 @@
 #X connect 324 0 496 1;
 #X connect 325 0 319 0;
 #X connect 327 0 308 0;
-#X connect 328 0 414 7;
+#X connect 328 0 414 8;
 #X connect 329 0 328 0;
 #X connect 330 0 318 4;
 #X connect 331 0 29 1;
@@ -1174,3 +1176,5 @@
 #X connect 552 0 70 0;
 #X connect 553 0 548 0;
 #X connect 553 0 550 1;
+#X connect 554 0 555 0;
+#X connect 555 0 414 6;

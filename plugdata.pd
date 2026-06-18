@@ -262,6 +262,9 @@
 #X obj 163 133 hsl 60 18 0 1 0 0 saw_to_pulse saw_to_pulse-r saw_to_pulse 0 -10 0 12 #e4e4e4 #4c4c4c #343434 0 0;
 #X msg 30 1445 0;
 #X obj 30 1474 s saw_to_pulse-r;
+#X obj 1203 336 hsl 91 19 -100 100 0 0 lop_to_hip lop_to_hip-r lop_to_hip -60 10 0 12 #e4e4e4 #4c4c4c #343434 0 0;
+#X obj 1291 1630 s lop_to_hip-r;
+#X msg 1291 1601 -100;
 #X connect 40 0 41 0;
 #X connect 40 0 156 0;
 #X connect 40 0 157 0;
@@ -355,6 +358,7 @@
 #X connect 161 0 170 0;
 #X connect 161 0 182 0;
 #X connect 161 0 166 0;
+#X connect 161 0 259 0;
 #X connect 164 0 165 0;
 #X connect 166 0 169 0;
 #X connect 170 0 167 0;
@@ -405,4 +409,5 @@
 #X connect 252 0 251 0;
 #X connect 253 0 60 0;
 #X connect 255 0 256 0;
+#X connect 259 0 258 0;
 #X coords 0 -1 1 1 1350 460 1 5 5;
