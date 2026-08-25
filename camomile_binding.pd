@@ -1,7 +1,7 @@
 #N canvas -11 0 3836 3161 12;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array main_sample 35235 float 0;
-#X coords 0 1 35234 -1 200 140 1;
+#X array main_sample 4096 float 0;
+#X coords 0 1 4095 -1 200 140 1;
 #X restore 217 11 graph;
 #X obj 19 102 modules/sample_file_handler;
 #X obj 19 78 modules/audio_in_handler;
@@ -22,8 +22,8 @@
 #X obj 1029 207 t b f;
 #X obj 1034 244 int;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array sub_sample 165292 float 0;
-#X coords 0 1 165291 -1 200 140 1;
+#X array sub_sample 4096 float 0;
+#X coords 0 1 4095 -1 200 140 1;
 #X restore 449 11 graph;
 #X obj 819 46 r playhead;
 #X obj 1093 46 loadbang;
@@ -118,6 +118,9 @@
 #X obj 1283 310 lang/show_hint;
 #X obj 1283 217 r mouseexit_atom_number;
 #X obj 1313 249 r mouseexit_label;
+#X text 1080 817 v0.2 new parameters;
+#X obj 1080 844 modules/camomile/gui.link 54 saw_to_pulse;
+#X obj 1080 871 modules/camomile/gui.link 55 lop_to_hip;
 #X connect 5 0 6 0;
 #X connect 7 0 5 0;
 #X connect 7 1 5 0;

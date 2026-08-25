@@ -196,4 +196,6 @@
 #X obj 733 422 hsl 80 16 0 20 0 0 sld-lop_filt_factor sld-lop_filt_factor-r empty -2 -8 0 10 #ffffff #58be9e #373737 0 0;
 #X obj 733 442 hsl 80 16 0 100 0 0 sld-lop_filt_mix sld-lop_filt_mix-r empty -2 -8 0 10 #ffffff #58be9e #373737 0 0;
 #X obj 733 462 hsl 80 16 0 3000 0 0 sld-lop_pluck sld-lop_pluck-r empty -2 -8 0 10 #ffffff #58be9e #373737 0 0;
+#X floatatom 820 538 6 0 3000 0 - lop_to_hip-r lop_to_hip 10;
+#X floatatom 750 538 6 0 3000 0 - saw_to_pulse-r saw_to_pulse 10;
 #X coords 0 -1 1 1 1200 500 1 0 0;

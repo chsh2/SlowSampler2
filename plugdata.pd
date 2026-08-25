@@ -12,8 +12,8 @@
 #X obj 8 113 cnv 15 233 107 empty empty empty 20 12 0 14 #fce0bc #343434 0;
 #X obj 8 51 cnv 15 470 57 empty empty empty 20 12 0 14 #fcb8d4 #343434 0;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array main_sample 74880 float 0;
-#X coords 0 1 74879 -1 200 140 1;
+#X array main_sample 4096 float 0;
+#X coords 0 1 4095 -1 200 140 1;
 #X restore 27 665 graph;
 #X floatatom 120 234 8 0 3000 0 attack attack-r attack 0;
 #X floatatom 120 264 8 0 8000 0 decay decay-r decay 0;
@@ -214,8 +214,8 @@
 #X obj 1053 13 bng 21 250 50 0 gui_load_sub_sample empty empty 0 -11 0 12 #fcfcfc #000000 #000000;
 #X text 928 12 Load Sub Sample;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array sub_sample 15633 float 0;
-#X coords 0 1 15632 -1 200 140 1;
+#X array sub_sample 4096 float 0;
+#X coords 0 1 4095 -1 200 140 1;
 #X restore 276 665 graph;
 #X obj 144 430 tgl 25 0 cc_input_enabled cc_input_enabled-r cc_input_enabled -120 10 0 16 #e4e4e4 #4c4c4c #343434 0 1;
 #X msg 228 1591 0;
