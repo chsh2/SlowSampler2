@@ -15,7 +15,7 @@ param -name MainFileStartPosition -label % -min 0 -max 100 -default 0;
 param -name MainFileEndPosition -label % -min 0 -max 100 -default 100;
 param -name MainFileTimeStretch -label % -min 25 -max 400 -default 100;
 param -name MainFileSpeedCurve -label % -min 25 -max 400 -default 100;
-param -name MainFileLoop -min 0 -max 1 -default 0 -nsteps 2;
+param -name MainFileLoop -list Off/Normal/PingPong -default 0;
 param -name FileStretchMode -list Constant/Classic/Adaptive;
 param -name AdaptiveDelay -label beat -min 1 -max 8 -default 4 -nsteps 8;
 
@@ -41,7 +41,7 @@ param -name SubFileStartPosition -label % -min 0 -max 100 -default 0;
 param -name SubFileEndPosition -label % -min 0 -max 100 -default 100;
 param -name SubFileTimeStretch -label % -min 25 -max 400 -default 100;
 param -name SubFileSpeedCurve -label % -min 25 -max 400 -default 100;
-param -name SubFileLoop -min 0 -max 1 -default 0 -nsteps 2;
+param -name SubFileLoop -list Off/Normal/PingPong -default 0;
 param -name SubFileAutoStretch -min 0 -max 1 -default 0 -nsteps 2;
 
 param -name ModVolumeEnabled -min 0 -max 1 -default 0 -nsteps 2;
