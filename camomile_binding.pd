@@ -121,6 +121,8 @@
 #X text 1080 817 v0.2 new parameters;
 #X obj 1080 844 modules/camomile/gui.link 54 saw_to_pulse;
 #X obj 1080 871 modules/camomile/gui.link 55 lop_to_hip;
+#X obj 1080 901 modules/camomile/gui.link 56 main_loop_position;
+#X obj 1080 928 modules/camomile/gui.link 57 sub_loop_position;
 #X connect 5 0 6 0;
 #X connect 7 0 5 0;
 #X connect 7 1 5 0;
