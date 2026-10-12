@@ -208,7 +208,7 @@
 #X obj 1015 281 tgl 25 0 sub_auto_stretch sub_auto_stretch-r sub_auto_stretch -119 10 0 16 #e4e4e4 #4c4c4c #343434 0 1;
 #X obj 1236 61 tgl 25 0 mod_volume mod_volume-r mod_volume -95 10 0 16 #e4e4e4 #4c4c4c #343434 0 1;
 #X obj 1236 173 tgl 25 0 mod_pitch mod_pitch-r mod_pitch -95 10 0 16 #e4e4e4 #4c4c4c #343434 0 1;
-#X obj 1236 258 tgl 25 0 mod_tone mod_tone-r mod_tone -95 10 0 16 #e4e4e4 #4c4c4c #343434 0 1;
+#X obj 1236 247 tgl 25 0 mod_tone mod_tone-r mod_tone -95 10 0 16 #e4e4e4 #4c4c4c #343434 0 1;
 #X obj 1053 13 bng 21 250 50 0 gui_load_sub_sample empty empty 0 -11 0 12 #fcfcfc #000000 #000000;
 #X text 928 12 Load Sub Sample;
 #N canvas 0 0 450 250 (subpatch) 0;
@@ -247,11 +247,11 @@
 #X msg 1701 1368 100;
 #X msg 1701 1432 0;
 #X obj 1700 1464 s mod_tone-r;
-#X obj 1704 1525 s mod_vocoder_channels-r;
+#X obj 1699 1527 s mod_vocoder_channels-r;
 #X obj 1636 1135 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4c4c4c #343434;
 #X msg 1702 1241 100;
-#X obj 1236 294 hradio 20 1 0 3 mod_vocoder_channels mod_vocoder_channels-r mod_vocoder_channels -125 10 0 12 #e4e4e4 #4d4d4d #373737 0;
-#X msg 1701 1495 0;
+#X obj 1236 274 hradio 20 1 0 3 mod_vocoder_channels mod_vocoder_channels-r mod_vocoder_channels -125 10 0 12 #e4e4e4 #4d4d4d #373737 0;
+#X msg 1700 1492 0;
 #X msg 26 1298 0;
 #X msg 1480 1463 0;
 #X obj 407 1327 s main_base_pitch-r;
@@ -276,6 +276,9 @@
 #X msg 415 1657 0;
 #X msg 1480 1521 0;
 #X obj 1480 1550 s sub_loop_position-r;
+#X floatatom 1236 297 7 -12 12 0 mod_formant_shift mod_formant_shift-r mod_formant_shift 0;
+#X msg 1700 1560 0;
+#X obj 1698 1590 s mod_formant_shift-r;
 #X connect 40 0 41 0;
 #X connect 40 0 155 0;
 #X connect 40 0 156 0;
@@ -415,6 +418,7 @@
 #X connect 243 0 239 0;
 #X connect 243 0 240 0;
 #X connect 243 0 246 0;
+#X connect 243 0 272 0;
 #X connect 244 0 235 0;
 #X connect 246 0 242 0;
 #X connect 247 0 68 0;
@@ -425,4 +429,5 @@
 #X connect 257 0 256 0;
 #X connect 268 0 267 0;
 #X connect 269 0 270 0;
+#X connect 272 0 273 0;
 #X coords 0 -1 1 1 1350 460 1 5 5;

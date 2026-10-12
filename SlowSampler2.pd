@@ -200,4 +200,5 @@
 #X floatatom 750 538 6 0 3000 0 - saw_to_pulse-r saw_to_pulse 10;
 #X floatatom 750 571 6 0 100 0 - main_loop_position-r main_loop_position 10;
 #X floatatom 750 597 6 0 100 0 - sub_loop_position-r sub_loop_position 10;
+#X floatatom 750 635 6 0 100 0 - mod_formant_shift-r mod_formant_shift 10;
 #X coords 0 -1 1 1 1200 500 1 0 0;
